@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCB Squad Fullscreen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    body {
+      background: url('rcb.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      background-color: yellow;
+      color: black;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+<h1>🔥 RCB Squad 2025 🔥</h1>
+<button onclick="playSong()">🍭 Lollipop</button>
+<audio id="mySong" src="song.mpeg"></audio>
+
+<script>
+  function playSong() {
+    document.getElementById('mySong').play();
+  }
+</script>
+</body>
+</html>
